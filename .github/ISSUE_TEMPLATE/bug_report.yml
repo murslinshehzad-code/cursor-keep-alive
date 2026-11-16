@@ -1,0 +1,49 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please do not include Google account details, session links or screenshots of your laptop.
+  - type: input
+    id: device
+    attributes:
+      label: Phone model and Android version
+      placeholder: Samsung Galaxy A26 5G, Android 16
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Tap Start
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: status
+    attributes:
+      label: Status text shown in the app
+      placeholder: "Laptop session: connecting"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: Output of `adb logcat -s KeepAlive`
+      render: shell

@@ -1,0 +1,23 @@
+# Build output
+build/
+*.apk
+*.aab
+
+# Gradle / Kotlin caches
+.gradle/
+.kotlin/
+
+# Local machine configuration (contains your SDK path)
+local.properties
+
+# IDE and OS files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Signing keys must never be committed
+*.jks
+*.keystore
+keystore.properties
